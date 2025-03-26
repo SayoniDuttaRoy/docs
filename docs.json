@@ -14,8 +14,7 @@
             "group": "Get Started",
             "pages": [
               "introduction",
-              "quickstart",
-              "core-concepts"
+              "quickstart"
             ]
           },
           {
@@ -23,19 +22,7 @@
             "pages": [
               "agent-workflows/introduction",
               "agent-workflows/create-workflow",
-              "agent-workflows/run-workflow",
-              "agent-workflows/share-as-template"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "agent-workflows/use-templates"
             ]
           }
         ],
