@@ -31,8 +31,10 @@ Let's dive in!
 
 ### Creating an agent workflow
 
-> Agent workflows allow you to connect multiple AI agents and tools to create powerful automations. 
-> Use our simple drag and drop editor to design your custom workflow in less than 5 minutes.
+<Tip>
+Agent workflows allow you to connect multiple AI agents and tools to create powerful automations. 
+Use our simple drag and drop editor to design and deploy your custom workflow in minutes.
+</Tip>
 
 To create a new agent workflow:
 
@@ -46,8 +48,10 @@ To create a new agent workflow:
 
 ### Add a Trigger
 
-> Triggers are events that start your workflow.
-> Examples include manual triggers (run on demand), scheduled triggers (e.g. every weekday at 7 AM), or event-based triggers (e.g. when an email is received).
+<Tip>
+Triggers are events that start your workflow.
+Examples include manual triggers (run on demand), scheduled triggers (e.g. every weekday at 7 AM), or event-based triggers (e.g. when an email is received).
+</Tip>
 
 In this example, we'll set up a manual trigger that takes a company website as input.
 
@@ -61,8 +65,10 @@ In this example, we'll set up a manual trigger that takes a company website as i
 
 ### Add an AI Agent
 
-> AI agents are intelligent systems powered by LLMs that can perform multi-step tasks without human intervention.
-> They can be equipped with tools and can autonomously decide how to use them to complete tasks.
+<Tip>
+AI agents are intelligent systems powered by LLMs that can perform multi-step tasks without human intervention.
+They can be equipped with tools and can autonomously decide how to use them to complete tasks.
+</Tip>
 
 1. Click the `+` button to add a new step. 
 2. Select `Agents`
@@ -75,9 +81,11 @@ In this example, we'll set up a manual trigger that takes a company website as i
 
 #### Build the Agent with AI
 
-> Describe the task you want your agent to perform, and let AI build a powerful agent for you.
-> It will set up the agent’s instructions and add the necessary tools based on your task. 
-> You can then customize the agent to fit your needs.
+<Tip>
+Describe the task you want your agent to perform, and let AI build a powerful agent for you.
+It will set up the agent’s instructions and add the necessary tools based on your task. 
+You can then customize the agent to fit your needs.
+</Tip>
 
 1. Click on the added AI Agent node
 2. Click the `Create with AI` button
@@ -88,8 +96,10 @@ In this example, we'll set up a manual trigger that takes a company website as i
 
 3. Set the agent description to:
 
-> Given a company website, build a company research agent that scrapes the website and uses Google Search to generate a concise, accurate executive report in HTML format. 
-> The report should contain the following sections: Executive summary, key product or service offerings, customer case studies or testimonials (if available) and recent company news. 
+```Plain text
+Given a company website, build a company research agent that scrapes the website and uses Google Search to generate a concise, accurate executive report in HTML format. 
+The report should contain the following sections: Executive summary, key product or service offerings, customer case studies or testimonials (if available) and recent company news. 
+```
 
 4. Click `Build Agent`
 
@@ -103,10 +113,12 @@ You can customize the agent instructions, add or remove tools or change the unde
 
 #### Add Agent Input
 
-> Each agent can accept one or more inputs. By configuring these inputs, you can pass data from earlier steps to the AI agent.
-> Use the `+` button in the text box to insert output from any previous step into the current step.
-> 
-> Optionally, you can reference any agent input within the agent task.
+<Tip>
+Each agent can accept one or more inputs. By configuring these inputs, you can pass data from earlier steps to the AI agent.
+Use the `+` button in the text box to insert output from any previous step into the current step.
+ 
+Optionally, you can reference any agent input within the agent task.
+</Tip>
 
 6. If it's not already added, create an agent input named `Company Website`.
 7. Click the `+` button to map the company website from the `Manual Trigger` step to the value of this input.
@@ -117,13 +129,17 @@ You can customize the agent instructions, add or remove tools or change the unde
 
 #### Add Tools
 
-> Each agent can be equipped with tools. Based on the task, the agent will use them as needed to complete the work.
+<Tip>
+Each agent can be equipped with tools. Based on the task, the agent will use them as needed to complete the work.
+</Tip>
 
-8. Add or remove tools as required.
+8. Add or remove tools as required. For this example, you can add the `Scrape Website` and `Google Search` tools.
 
 <Frame>
   <img src="/images/add-tools.png" alt="Add Agent Tools" />
 </Frame>
+
+### Add an app to send email notifications
 
 
 ## Remove
