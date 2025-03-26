@@ -1,0 +1,185 @@
+---
+title: Quickstart
+description: |
+    In this guide, you will learn how to build an AI agent that performs in-depth research about any company and emails you a comprehensive report.
+
+    This lesson should take less than 5 minutes and once you’re done, you’ll have your own AI company research agent.
+
+    Let’s dive in!
+---
+
+## Creating an agent workflow
+
+<Tip>
+Agent workflows allow you to connect multiple AI agents and tools to create powerful automations. 
+Use our simple drag and drop editor to design and deploy your custom workflow in minutes.
+</Tip>
+
+To create a new agent workflow:
+
+1. [Sign Up](https://genfuseai.com/sign-up) in GenFuse AI
+2. Once you've logged in, go to the [Agent Workflows](https://genfuseai.com/dashboard) page (in the sidebar)
+3. Create a new workflow by clicking the button in the top right corner.
+
+<Frame>
+  <img src="/images/create-workflow.png" alt="Create workflow" />
+</Frame>
+
+## Customizing the agent workflow
+
+### Add a Trigger
+
+<Tip>
+Triggers are events that start your workflow.
+Examples include manual triggers (run on demand), scheduled triggers (e.g. every weekday at 7 AM), or event-based triggers (e.g. when an email is received).
+</Tip>
+
+In this example, we'll set up a manual trigger that takes a company website as input.
+
+- Click the `Trigger` node in your workflow
+- Select `Manual` Trigger
+- Click `Add Input` and add `Company Website` as an input — this lets you provide custom data each time the workflow runs.
+
+<Frame>
+  <img src="/images/configure-trigger.png" alt="Configure trigger" />
+</Frame>
+
+### Add an AI Agent
+
+<Tip>
+AI agents are intelligent systems powered by LLMs that can perform multi-step tasks without human intervention.
+They can be equipped with tools and can autonomously decide how to use them to complete tasks.
+</Tip>
+
+- Click the `+` button to add a new step. 
+- Select `Agents`
+- Click `New Agent` to create an agent. 
+
+<Frame>
+  <img src="/images/add-agent.png" alt="Add agent" />
+</Frame>
+
+
+#### Build the Agent with AI
+
+<Tip>
+Describe the task you want your agent to perform, and let AI build a powerful agent for you.
+It will set up the agent’s instructions and add the necessary tools based on your task. 
+You can then customize the agent to fit your needs.
+</Tip>
+
+- Click on the added AI Agent node
+- Click the `Create with AI` button
+
+<Frame>
+  <img src="/images/create-agent-with-ai.png" alt="Create Agent with AI" />
+</Frame>
+
+- Set the agent description to:
+
+```Plain text
+Given a company website, build a company research agent that scrapes the website and uses Google Search to generate a concise, accurate executive report in HTML format. 
+The report should contain the following sections: Executive summary, key product or service offerings, customer case studies or testimonials (if available) and recent company news. 
+```
+
+- Click `Build Agent`
+
+<Frame>
+  <img src="/images/create-with-ai-prompt.png" alt="Create Agent with AI Prompt" />
+</Frame>
+
+- Once your agent is built, accept it and make any necessary changes. 
+You can customize the agent instructions, add or remove tools or change the underlying LLM model (under Settings).
+
+
+#### Add Agent Input
+
+<Tip>
+Each agent can accept one or more inputs. By configuring these inputs, you can pass data from earlier steps to the AI agent.
+Use the `+` button in the text box to insert output from any previous step into the current step.
+ 
+Optionally, you can reference any agent input within the agent task.
+</Tip>
+
+- If it's not already added, create an agent input named `Company Website`.
+- Click the `+` button to map the company website from the `Manual Trigger` step to the value of this input.
+
+<Frame>
+  <img src="/images/add-agent-input.png" alt="Add Agent Input" />
+</Frame>
+
+#### Add Tools
+
+<Tip>
+Each agent can be equipped with tools. Based on the task, the agent will use them as needed to complete the work.
+</Tip>
+
+- Add or remove tools as required. For this example, you can add the `Scrape Website` and `Google Search` tools.
+
+<Frame>
+  <img src="/images/add-tools.png" alt="Add Agent Tools" />
+</Frame>
+
+#### Update LLM Model
+
+<Tip>
+Each agent is powered by an LLM model, which you can choose under Settings. 
+Different agents in a workflow can use different LLM models.
+</Tip>
+
+- You can change the LLM model under settings. 
+
+<Frame>
+  <img src="/images/change-llm-model.png" alt="Add Agent Tools" />
+</Frame>
+
+### Add Email Integration
+
+<Tip>
+App integrations enable you to connect to third-party services like Google Search, Sheets, Email, Linkedin, Web Scrapers and more.
+</Tip>
+
+
+- Click the `+` button to add a new step. 
+- Select `App Integrations`
+- Click `Notification` and select the `Send Email Notification` action. 
+
+<Frame>
+  <img src="/images/add-email-integration.png" alt="Create Agent with AI" />
+</Frame>
+
+- Configure the `Send Email Notification` node by clicking on it
+- Set the email `Message` to the report generated by the `Company Research Agent` by clicking the `+` button 
+- Add your email id in the `To` field and add an optional Subject
+
+<Frame>
+  <img src="/images/configure-email-node.png" alt="Create Agent with AI" />
+</Frame>
+
+## Run the agent workflow
+
+- `Save` the workflow
+- `Test` the workflow by providing the company website you want to research
+
+<Frame>
+  <img src="/images/test-workflow.png" alt="Create Agent with AI" />
+</Frame>
+
+- Once the run completes, you'll be able to see the exact steps that were taken to complete the task. 
+And you should've received your first email from the AI agent!
+- Customize the workflow as needed
+- Run your workflow easily and see all past runs in the `Use` tab
+
+<Frame>
+  <img src="/images/build-tab-workflow.png" alt="Create Agent with AI" />
+</Frame>
+
+## Share your workflow
+
+Congratulations! You've successfully built your first agent workflow.
+
+Share it with your team by clicking the `Share` button. Your teammates can now clone and use this workflow.
+
+<Frame>
+  <img src="/images/share-workflow.png" alt="Create Agent with AI" />
+</Frame>
