@@ -1,12 +1,17 @@
 ---
 title: Introduction
 description: |
-  Welcome to GenFuse AI!
-
-  GenFuse AI is a no-code platform where you can build custom AI agents to automate any task. No technical skills required.
-
-  Increase efficiency. Not headcount.
+  Build custom AI agents to automate any work. No technical skills required.
 ---
+
+## What is GenFuse AI?
+
+GenFuse AI is a no-code platform where you can build custom AI agents and multi-agent teams to automate work. 
+
+Our AI agents can reason, use tools and self-correct, just like human employees. 
+Combine multiple AI agents and tools to seamlessly automate complex multi-step tasks.
+
+Increase efficiency. Not headcount.
 
 {/* TODO: Replace with video */}
 
@@ -21,136 +26,39 @@ description: |
   alt="Hero Dark"
 />
 
-## Building your first agent workflow
+## Core Features
 
-In this guide, you will learn how to build an AI agent that performs in-depth research about any company and emails you a comprehensive report.
+### AI Agents
+AI agents are intelligent systems powered by LLMs that can perform multi-step tasks without human intervention. 
+They can be equipped with tools and can autonomously decide how to use them to complete tasks.
+Each agent is fully customizable.
 
-This lesson should take less than 5 minutes and once you're done, you'll have your own AI company research agent.
-
-Let's dive in!
-
-### Creating an agent workflow
-
-<Tip>
+### Agent Workflows
 Agent workflows allow you to connect multiple AI agents and tools to create powerful automations. 
 Use our simple drag and drop editor to design and deploy your custom workflow in minutes.
-</Tip>
 
-To create a new agent workflow:
-
-1. [Sign Up](https://genfuseai.com/sign-up) in GenFuse AI
-2. Once you've logged in, go to the [Agent Workflows](https://genfuseai.com/dashboard) page (in the sidebar)
-3. Create a new workflow by clicking the button in the top right corner.
-
-<Frame>
-  <img src="/images/create-workflow.png" alt="Create workflow" />
-</Frame>
-
-### Add a Trigger
-
-<Tip>
-Triggers are events that start your workflow.
+### Triggers
+Triggers are events that start your workflow. 
 Examples include manual triggers (run on demand), scheduled triggers (e.g. every weekday at 7 AM), or event-based triggers (e.g. when an email is received).
-</Tip>
 
-In this example, we'll set up a manual trigger that takes a company website as input.
+### Tools & Integrations
+App integrations enable you to connect to third-party services like Google Search, Sheets, Email, Linkedin, Web Scrapers and more.
+AI agents can use them as tools, or you can use them as nodes in your own workflows.
 
-1. Click the `Trigger` node in your workflow
-2. Select `Manual` Trigger
-3. Click `Add Input` and add `Company Website` as an input — this lets you provide custom data each time the workflow runs.
+Absolutely — here’s a tighter, more concise version:
 
-<Frame>
-  <img src="/images/configure-trigger.png" alt="Configure trigger" />
-</Frame>
+---
 
-### Add an AI Agent
+## How It All Works Together
 
-<Tip>
-AI agents are intelligent systems powered by LLMs that can perform multi-step tasks without human intervention.
-They can be equipped with tools and can autonomously decide how to use them to complete tasks.
-</Tip>
+1. **Trigger** starts the workflow.
 
-1. Click the `+` button to add a new step. 
-2. Select `Agents`
-3. Click `New Agent` to create an agent. 
+2. **Agent Workflows** connect everything.
+This is where you combine agents, tools, and integrations to build your automation.
 
-<Frame>
-  <img src="/images/add-agent.png" alt="Add agent" />
-</Frame>
+3. **AI Agents** are task specialists. 
+Each agent focuses on a specific job — like research, summarization, or writing.
 
-
-#### Build the Agent with AI
-
-<Tip>
-Describe the task you want your agent to perform, and let AI build a powerful agent for you.
-It will set up the agent’s instructions and add the necessary tools based on your task. 
-You can then customize the agent to fit your needs.
-</Tip>
-
-1. Click on the added AI Agent node
-2. Click the `Create with AI` button
-
-<Frame>
-  <img src="/images/create-agent-with-ai.png" alt="Create Agent with AI" />
-</Frame>
-
-3. Set the agent description to:
-
-```Plain text
-Given a company website, build a company research agent that scrapes the website and uses Google Search to generate a concise, accurate executive report in HTML format. 
-The report should contain the following sections: Executive summary, key product or service offerings, customer case studies or testimonials (if available) and recent company news. 
-```
-
-4. Click `Build Agent`
-
-<Frame>
-  <img src="/images/create-with-ai-prompt.png" alt="Create Agent with AI Prompt" />
-</Frame>
-
-5. Once your agent is built, accept it and make any necessary changes. 
-You can customize the agent instructions, add or remove tools or change the underlying LLM model (under Settings).
-
-
-#### Add Agent Input
-
-<Tip>
-Each agent can accept one or more inputs. By configuring these inputs, you can pass data from earlier steps to the AI agent.
-Use the `+` button in the text box to insert output from any previous step into the current step.
- 
-Optionally, you can reference any agent input within the agent task.
-</Tip>
-
-6. If it's not already added, create an agent input named `Company Website`.
-7. Click the `+` button to map the company website from the `Manual Trigger` step to the value of this input.
-
-<Frame>
-  <img src="/images/add-agent-input.png" alt="Add Agent Input" />
-</Frame>
-
-#### Add Tools
-
-<Tip>
-Each agent can be equipped with tools. Based on the task, the agent will use them as needed to complete the work.
-</Tip>
-
-8. Add or remove tools as required. For this example, you can add the `Scrape Website` and `Google Search` tools.
-
-<Frame>
-  <img src="/images/add-tools.png" alt="Add Agent Tools" />
-</Frame>
-
-#### Update LLM Model
-
-<Tip>
-Each agent is powered by an LLM model, which you can choose under Settings. 
-Different agents in a workflow can use different LLM models.
-</Tip>
-
-9. You can change the LLM model under settings. 
-
-<Frame>
-  <img src="/images/change-llm-model.png" alt="Add Agent Tools" />
-</Frame>
-
-### Add App Integration
+4. **Tools** help agents get things done.
+Tools/apps integrations can also be used directly in workflows without needing an agent — perfect for simple tasks like sending emails or scraping a site.
 
