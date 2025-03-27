@@ -22,7 +22,8 @@
             "pages": [
               "agent-workflows/introduction",
               "agent-workflows/create-workflow",
-              "agent-workflows/use-templates"
+              "agent-workflows/use-templates",
+              "agent-workflows/passing-data"
             ]
           }
         ],
