@@ -25,6 +25,13 @@
               "agent-workflows/use-templates",
               "agent-workflows/passing-data"
             ]
+          },
+          {
+            "group": "Key Components",
+            "pages": [
+              "key-components/agents",
+              "key-components/triggers"
+            ]
           }
         ],
     "global": {
