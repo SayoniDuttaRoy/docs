@@ -31,7 +31,8 @@
             "pages": [
               "key-components/agents",
               "key-components/triggers",
-              "key-components/app-integrations"
+              "key-components/app-integrations",
+              "key-components/core-nodes"
             ]
           }
         ],
