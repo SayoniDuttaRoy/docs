@@ -1,0 +1,61 @@
+---
+title: Custom Tools
+description: Extend the capabilities of GenFuse AI by creating your own custom tools to integrate specialized functionality into your agent workflows.
+---
+
+## What are Custom Tools?
+
+Custom Tools allow you to build your own specialized tools within GenFuse AI. You can define custom logic, integrate with any API or service, and then make these tools available to your agents.
+
+<Tip>
+Custom Tools empower you to tailor GenFuse AI to your specific needs by creating reusable components with custom functionality.
+</Tip>
+
+## Key Features of Custom Tools
+
+*   **Custom Functionality:** Define custom actions using Python code.
+*   **API Integrations:** Integrate with any API or service by writing code to interact with it.
+*   **Reusability:** Create tools that can be used in multiple agent workflows.
+*   **Inputs and Outputs:** Define the inputs that the tool accepts and the outputs it produces.
+*   **Flexibility:** Tailor the tool to your specific needs, from simple data transformations to complex logic.
+
+## Creating a Custom Tool
+
+<Frame>
+  <img src="/images/custom-tool.png" alt="Export agent" />
+</Frame>
+
+Here's how to create a custom tool in GenFuse AI:
+
+1.  **Add a Tool Node:** Within a workflow, click the "+" icon to add a new step. Select "Custom Tool."
+2.  **Create a New Custom Tool:** Choose "New Custom Tool" to begin building your custom tool from scratch.
+3.  **Configuration:**
+    *   **Name:** Give your tool a descriptive name. This will help you identify it when adding it to your agents.
+    *   **Description:** Provide a brief description of the tool's purpose.
+    *   **Inputs:**
+        *   **Name:** Define a name for each input parameter that the tool will accept.
+        *   **Value:** Specify the default value for the input parameter. Use the "+" button to insert connected variables from previous nodes in the workflow.
+    *   **Outputs:**
+        *   **Name:** Define a name for each output that the tool will produce.
+    *   **Code:** Write Python code to implement the tool's logic.
+
+
+## When to Use Custom Tools
+
+Use Custom Tools when you need to:
+
+*   **Integrate with internal APIs or custom services:** Access data or functionality that is not available through existing integrations.
+*   **Perform custom data transformations:** Transform data in a specific way that is not supported by standard nodes.
+*   **Implement specialized logic:** Create custom tools to perform tasks that require complex calculations or decision-making.
+
+## Exporting & Reusing Custom Tools
+
+Once your custom tool is fine-tuned and operating as desired, you can export it for reuse in other workflows. 
+To do so, select `Export` from the Custom Tool node menu (accessed by clicking the three vertical dots). 
+This will add a copy of the tool to your tool library.
+
+
+<br/>
+
+By using Custom Tools, you can significantly extend the capabilities of GenFuse AI and create highly specialized agent workflows that meet your unique needs.
+

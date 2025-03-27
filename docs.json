@@ -32,7 +32,8 @@
               "key-components/agents",
               "key-components/triggers",
               "key-components/app-integrations",
-              "key-components/core-nodes"
+              "key-components/core-nodes",
+              "key-components/custom-tools"
             ]
           }
         ],
